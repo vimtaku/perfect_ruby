@@ -1,0 +1,5 @@
+this is file.txt
+--------------------------
+hoge
+fuga
+piyopiyopiyo
