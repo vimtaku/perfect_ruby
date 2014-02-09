@@ -1,0 +1,20 @@
+
+require "rake/clean"
+
+CLEAN.include("meals/*")
+CLOBBER.include("reports/*")
+
+desc 'Task Description'
+task:default => :task_name
+task :task_name do
+  puts "Rake task!"
+end
+
+desc 'Task2 Description daze'
+task :task_name2 do
+  puts "Rake task2!"
+end
+
+rule '.o' => ['.c'] do |t|
+  sh "cc #{t.source} -c -o #{t.name}"
+end
